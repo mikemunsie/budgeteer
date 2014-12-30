@@ -1,0 +1,29 @@
+@import "config";
+
+// Normalize
+@import "../vendor/inuit-normalize/generic.normalize";
+
+// Bower Components
+//@import "bower/ui_bootstrap";
+
+// Elements
+@import "elements/buttons";
+
+// Transitions
+@import "elements/animations";
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,600italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:300italic,400italic,600italic,400,300,600,700);
+
+@import "../vendor/font-awesome/scss/font-awesome";
+
+// Base Styles
+body {
+  height: auto;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: $default-text;
+}

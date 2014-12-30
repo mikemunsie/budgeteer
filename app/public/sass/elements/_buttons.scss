@@ -1,0 +1,85 @@
+@import "../config";
+
+.md-button.md-default-theme.md-fab.orange:not([disabled]) {
+  background-color: rgba(#F6872D, 1);
+  &:hover {
+    background-color: rgba(darken(#F6872D, 10), 1);
+  }
+}
+
+.md-button.md-default-theme.md-fab.green:not([disabled]) {
+  background-color: rgba(#0b0, .7);
+  &:hover {
+    background-color: rgba(#0b0, 1);
+  }
+}
+
+.md-button.md-default-theme.md-fab.red:not([disabled]) {
+  background-color: rgba(#b44, .4);
+  &:hover {
+    background-color: rgba(#b44, .8);
+  }
+}
+
+.md-button.md-default-theme.md-full-blue.md-raised:not([disabled]) {
+  width: 100%;
+  line-height: 40px;
+  background-color: rgba(#4284F6, .8);
+  text-transform: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  &:hover {
+    background-color: rgba(#4284F6, 1);
+  }
+}
+
+.md-button.md-default-theme.md-full-orange.md-raised:not([disabled]) {
+  width: 100%;
+  line-height: 40px;
+  background-color: rgba(#F6872D, .8);
+  text-transform: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  &:hover {
+    background-color: rgba(#F6872D, 1);
+  }
+}
+
+.md-button.md-default-theme.md-full-green.md-raised:not([disabled]) {
+  width: 100%;
+  line-height: 40px;
+  background-color: rgba(#979E77, .8);
+  text-transform: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  &:hover {
+    background-color: rgba(#979E77, 1);
+  }
+}
+
+.md-button.md-default-theme.md-full-red.md-raised:not([disabled]) {
+  width: 100%;
+  line-height: 40px;
+  background-color: rgba(#D75769, .7);
+  text-transform: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  &:hover {
+    background-color: rgba(#D75769, 1);
+  }
+}
+
+
+.buttonToFullScreen-fixed {
+  position: fixed;
+  z-index: 10000;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  @include transition-property(all);
+  @include transition-duration(500ms);
+  @include transition-timing-function(ease-in);
+}

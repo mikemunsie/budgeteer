@@ -1,0 +1,34 @@
+@import "../config";
+@import "../mixins/transitions";
+
+@include animation("splash") {
+  0% {
+    -webkit-filter: sepia(0);
+  }
+  50% {
+    -webkit-filter: sepia(.6);
+  }
+  100% {
+    -webkit-filter: sepia(0);
+  }
+}
+
+@include animation("detail") {
+  0% {
+    opacity: 0;
+    background: #ccc;
+  }
+  100% {
+    opacity: 1;
+    background: #fff;
+  }
+}
+
+@include animation("slideIn") {
+  0% {
+    transform: translateX(-100%);
+  }
+  1000% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html ng-app="app-{+app/}">
+  {>"layouts/default/head" /}
+  <body class="layouts-default">
+    {>"layouts/default/header" /}
+    <div ng-view></div>
+  </body>
+</html>

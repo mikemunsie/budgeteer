@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0" />
+  <link rel="shortcut icon" href="/public/images/launcher-icon-0-75x.png" />
+  <link rel="apple-touch-icon" href="/public/images/launcher-icon-4x.png"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />  
+  <meta name="apple-mobile-web-app-title" content="{+title/}" />
+  <title>{+title/}</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/public/stylesheets/style.css" />
+
+  <!-- Custom Styles -->
+  {^styles}
+    {+styles/}
+  {/styles}
+  
+  <!-- Custom Scripts -->
+  {^scripts}
+    {+scripts/}
+  {/scripts}
+
+  <body class="{+bodyClass/}">
+    {+content/}
+  </body>
+</html>

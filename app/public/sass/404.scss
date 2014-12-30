@@ -1,0 +1,29 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background: url("/public/images/splash.jpg");
+  background-size: cover;
+  min-height: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+
+.error {
+  color: #f33;
+  font-weight: 300;
+}
+
+a {
+  color: #3E6994;
+  text-decoration: none;
+  font-weight: 500;
+}

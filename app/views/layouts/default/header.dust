@@ -1,0 +1,38 @@
+<div ng-controller="components_header_headerController" class="header" ng-class="{'no-title': headerService.title === ''}" ng-style="{background: headerService.headerBackground}">
+  <div class="navIcon">
+    <md-button ng-show="headerService.showBackButton === false" ng-click="openSidebar()" class="md-primary" icon-fill="#fff" icon-height="40" icon-width="40">
+      <md-icon icon="/public/images/menu.svg"></md-icon>
+    </md-button>
+    <md-button ng-show="headerService.showBackButton === true" ng-click="goBack()" class="md-primary" icon-fill="#fff" icon-height="40" icon-width="40">
+      <md-icon icon="/public/images/arrow-left.svg"></md-icon>
+    </md-button>
+    
+  </div>
+  <div class="title">
+    [[headerService.title]]
+  </div>
+</div>
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+  <md-content ng-controller="components_header_headerController">
+    <div class="profile">
+      <div class="background" ng-style="{'background-image': 'url(' + headerService.profile.background + ')'}"></div>
+      <div class="overlay"></div>
+      <div class="pic" ng-style="{'background-image': 'url(' + headerService.profile.pic + ')'}"></div>
+      <div class="name">[[headerService.profile.name]]</div>
+    </div>
+    <div class="links">
+      <md-button ng-click="gotoLink('')" ng-class="{selected: headerService.selectedLink === 'home'}">
+        <span class="icon fa fa-home"></span>
+        <span class="desc">Home</span>
+      </md-button>
+      <md-button ng-click="gotoLink('budget')" ng-class="{selected: headerService.selectedLink === 'budget'}">
+        <span class="icon fa fa-money"></span>
+        <span class="desc">Budget</span>
+      </md-button>
+      <md-button ng-click="gotoLink('profile')" ng-class="{selected: headerService.selectedLink === 'profile'}">
+        <span class="icon fa fa-user"></span>
+        <span class="desc">Profile</span>
+      </md-button>
+    </div>
+  </md-content>
+</md-sidenav>
