@@ -76,7 +76,7 @@ var packages = {
 // Tasks
 // ====================================
 
-gulp.task("prod-test", function () {
+gulp.task('prod', function() {
   var deferred = Q.defer();
   cleanAppJS()
     .then(cleanCSS)
@@ -84,11 +84,16 @@ gulp.task("prod-test", function () {
     .then(createContentCSS)
     .then(createAppCSS)
     .then(function() {
-      startServer();
+      shell.task([
+        "forever stop budgeteer.com",
+        "PORT=9002 forever --uid budgeteer.com start app/bin/www"
+      ], {
+        ignoreErrors: true
+      })();
+      deferred.resolve();
     });
   return deferred.promise;
 });
-
 
 gulp.task("dev", function () {
   var deferred = Q.defer();
