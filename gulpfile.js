@@ -86,7 +86,7 @@ gulp.task('prod', function() {
     .then(function() {
       shell.task([
         "forever stop budgeteer.com",
-        "PORT=9002 forever --uid budgeteer.com start app/bin/www"
+        "PORT=9002 forever --uid budgeteer start app/bin/www"
       ], {
         ignoreErrors: true
       })();
