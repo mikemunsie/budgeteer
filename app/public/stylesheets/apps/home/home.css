@@ -1,1 +1,312 @@
-.header{position:fixed;top:0;left:0;width:100%;z-index:59;height:60px;background:#2ECC71}.header .navIcon{position:absolute;top:0;left:0}.header .title{text-align:left;color:#fff;line-height:60px;position:relative;margin-left:60px;font-size:18px;font-weight:300}.header.no-title{background:0 0}.header.no-title .title{display:none}.md-sidenav-left .profile{height:150px;border-bottom:1px solid rgba(0,0,0,.5);position:relative}.md-sidenav-left .links{position:relative}.md-sidenav-left .links button{display:block;height:60px;text-decoration:none;overflow:hidden;border-bottom:1px solid #ccc;width:100%;text-transform:none;font-weight:300;padding:0;border-radius:0}.md-sidenav-left .links button .icon{line-height:60px;color:#666;width:60px;font-size:25px;text-align:center;float:left}.md-sidenav-left .links button .desc{font-size:16px;color:#666;line-height:60px;float:left}.md-sidenav-left .links button.selected{background:#4284F6}.md-sidenav-left .links button.selected .desc,.md-sidenav-left .links button.selected .icon{color:#fff}.md-sidenav-left .links button.selected:hover{background-color:#1164f4}.md-sidenav-left .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#5E77D5;opacity:.3}.md-sidenav-left .pic{display:none;position:absolute;bottom:3px;left:3px;width:70px;height:70px;background-size:cover;z-index:10}.md-sidenav-left .name{position:absolute;background:rgba(0,0,0,.6);width:100%;height:40px;padding-left:15px;line-height:40px;left:0;bottom:0;color:#fff;z-index:1;font-weight:300}.md-sidenav-left .background{position:absolute;top:0;left:0;background-size:cover;width:100%;height:100%}.layouts-default .content{margin-top:60px;padding:15px}.views_home .splash{position:absolute;top:0;width:100%;min-height:100%;left:0;padding:15px}.views_home .splash .overlay{position:absolute;z-index:1;top:0;left:0;width:100%;height:100%;display:none}.views_home .splash .bg{position:absolute;top:0;left:0;z-index:0;width:100%;height:100%;background:url(/public/images/splash.jpg) center top/cover}.views_home .splash .logo{position:relative;font-family:'Advent Pro';padding-top:80px;text-align:center;font-weight:300;color:#000;font-size:60px}.views_home .splash .subtitle{position:relative;text-align:center;font-size:18px;font-weight:300;color:#333;margin-top:7px}.views_home .splash .actionButtons{position:absolute;bottom:30px;left:15px;right:15px}.views_home .splash .actionButtons .md-button{margin-top:15px}.views_budget md-tabs{margin-bottom:30px;position:relative;z-index:1}.views_budget .tabs{margin-left:-15px;margin-right:-15px;margin-top:-15px}.views_budget .d3pie{margin:-70px auto -40px;position:relative}.views_budget .addBudget{position:fixed;bottom:15px;right:15px}.views_budget .details{margin:15px 15px 60px}.views_budget .details .detail{overflow:hidden;font-size:14px;padding:15px 0;border-bottom:1px solid #ccc}.views_budget .details .detail:first-child{padding-top:0}.views_budget .details .detail .key{float:left;width:70%;font-weight:500}.views_budget .details .detail .value{text-align:right;float:left;width:30%;font-weight:300}.views_budget .stats{border-top:1px solid #ccc;border-bottom:1px solid #ccc;box-shadow:0 0 1px #eee inset;overflow:hidden}.views_budget .stats .stat{float:left;width:33%;padding:15px 0;border-right:1px solid #ccc}.views_budget .stats .stat .key{text-align:center;font-size:12px;margin-bottom:3px;display:block}.views_budget .stats .stat .value{text-align:center;font-size:20px;display:block;color:#4284F6;font-weight:600}.views_budget .stats .stat.last{border-right:0}.views_profile input{width:100%}.views_profile .selected{border:3px solid #0ff}.views_profile .section{margin-bottom:30px}.views_edit md-tabs{margin-bottom:15px;position:relative;z-index:1}.views_edit .tabs{margin-left:-15px;margin-right:-15px;margin-top:-15px}.views_edit .addBudget{position:fixed;bottom:15px;right:15px}.views_edit .tab-content{padding:0 15px}.views_edit .detail{position:relative;overflow:hidden}.views_edit .detail .removeBudget{position:absolute;right:7px;top:50%;height:30px;width:30px;margin-top:-15px}.views_edit .detail .removeBudget md-icon{position:relative;left:-3px;top:-2px;line-height:30px}.views_edit .detail md-input-group{float:left;width:50%}.views_edit .detail md-input-group input{width:100%}.views_edit .detail md-input-group:first-child{padding-right:30px}
+/* Experimental Mixin Support */
+/* line 1, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 59;
+  height: 60px;
+  background: #2ECC71; }
+  /* line 9, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+  .header .navIcon {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* line 14, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+  .header .title {
+    text-align: left;
+    color: #fff;
+    line-height: 60px;
+    position: relative;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 300; }
+  /* line 23, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+  .header.no-title {
+    background: transparent; }
+    /* line 25, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+    .header.no-title .title {
+      display: none; }
+
+/* line 32, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+.md-sidenav-left .profile {
+  height: 150px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  position: relative; }
+/* line 37, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+.md-sidenav-left .links {
+  position: relative; }
+  /* line 39, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+  .md-sidenav-left .links button {
+    display: block;
+    height: 60px;
+    text-decoration: none;
+    overflow: hidden;
+    *zoom: 1;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-transform: none;
+    font-weight: 300;
+    padding: 0;
+    border-radius: 0; }
+    /* line 50, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+    .md-sidenav-left .links button .icon {
+      line-height: 60px;
+      color: #666;
+      width: 60px;
+      font-size: 25px;
+      text-align: center;
+      float: left; }
+    /* line 58, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+    .md-sidenav-left .links button .desc {
+      font-size: 16px;
+      color: #666;
+      line-height: 60px;
+      float: left; }
+    /* line 64, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+    .md-sidenav-left .links button.selected {
+      background: #4284F6; }
+      /* line 66, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+      .md-sidenav-left .links button.selected .icon, .md-sidenav-left .links button.selected .desc {
+        color: #fff; }
+      /* line 69, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+      .md-sidenav-left .links button.selected:hover {
+        background-color: #1164f4; }
+/* line 75, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+.md-sidenav-left .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5E77D5;
+  opacity: 0.3; }
+/* line 84, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+.md-sidenav-left .pic {
+  display: none;
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  z-index: 10; }
+/* line 94, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+.md-sidenav-left .name {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+  left: 0px;
+  bottom: 0px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 300; }
+/* line 107, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_components/header/scss/header */
+.md-sidenav-left .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+/* line 5, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_layouts/default/scss/default */
+.layouts-default .content {
+  margin-top: 60px;
+  padding: 15px; }
+
+/* line 2, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/home/scss/home */
+.views_home .splash {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  padding: 15px; }
+  /* line 9, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/home/scss/home */
+  .views_home .splash .overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; }
+  /* line 18, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/home/scss/home */
+  .views_home .splash .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/public/images/splash.jpg");
+    background-size: cover;
+    background-position: center top; }
+  /* line 29, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/home/scss/home */
+  .views_home .splash .logo {
+    position: relative;
+    font-family: 'Advent Pro';
+    padding-top: 80px;
+    text-align: center;
+    font-weight: 300;
+    color: #000;
+    font-size: 60px; }
+  /* line 38, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/home/scss/home */
+  .views_home .splash .subtitle {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    margin-top: 7px; }
+  /* line 46, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/home/scss/home */
+  .views_home .splash .actionButtons {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    right: 15px; }
+    /* line 51, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/home/scss/home */
+    .views_home .splash .actionButtons .md-button {
+      margin-top: 15px; }
+
+/* line 2, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+.views_budget md-tabs {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1; }
+/* line 7, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+.views_budget .tabs {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px; }
+/* line 12, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+.views_budget .d3pie {
+  margin: auto;
+  position: relative;
+  margin-top: -70px;
+  margin-bottom: -40px; }
+/* line 18, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+.views_budget .addBudget {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; }
+/* line 23, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+.views_budget .details {
+  margin: 15px;
+  margin-bottom: 60px; }
+  /* line 26, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+  .views_budget .details .detail {
+    overflow: hidden;
+    *zoom: 1;
+    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc; }
+    /* line 31, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+    .views_budget .details .detail:first-child {
+      padding-top: 0; }
+    /* line 34, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+    .views_budget .details .detail .key {
+      float: left;
+      width: 70%;
+      font-weight: 500; }
+    /* line 39, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+    .views_budget .details .detail .value {
+      text-align: right;
+      float: left;
+      width: 30%;
+      font-weight: 300; }
+/* line 47, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+.views_budget .stats {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0 1px #eee inset;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 52, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+  .views_budget .stats .stat {
+    float: left;
+    width: 33%;
+    padding: 15px 0;
+    border-right: 1px solid #ccc; }
+    /* line 57, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+    .views_budget .stats .stat .key {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 3px;
+      display: block; }
+    /* line 63, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+    .views_budget .stats .stat .value {
+      text-align: center;
+      font-size: 20px;
+      display: block;
+      color: #4284F6;
+      font-weight: 600; }
+    /* line 70, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/budget/scss/budget */
+    .views_budget .stats .stat.last {
+      border-right: 0; }
+
+/* line 2, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/profile/scss/profile */
+.views_profile input {
+  width: 100%; }
+/* line 5, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/profile/scss/profile */
+.views_profile .selected {
+  border: 3px solid #0ff; }
+/* line 8, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/profile/scss/profile */
+.views_profile .section {
+  margin-bottom: 30px; }
+
+/* line 2, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+.views_edit md-tabs {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1; }
+/* line 7, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+.views_edit .tabs {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px; }
+/* line 12, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+.views_edit .addBudget {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; }
+/* line 17, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+.views_edit .tab-content {
+  padding: 0 15px; }
+/* line 20, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+.views_edit .detail {
+  position: relative;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 23, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+  .views_edit .detail .removeBudget {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: -15px; }
+    /* line 30, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+    .views_edit .detail .removeBudget md-icon {
+      position: relative;
+      left: -3px;
+      top: -2px;
+      line-height: 30px; }
+  /* line 37, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+  .views_edit .detail md-input-group {
+    float: left;
+    width: 50%; }
+    /* line 40, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+    .views_edit .detail md-input-group input {
+      width: 100%; }
+    /* line 43, /Users/michaelmunsie/Documents/projects/servers/budgeteer.com/repo/app/public/angular_views/edit/scss/edit */
+    .views_edit .detail md-input-group:first-child {
+      padding-right: 30px; }
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2FuZ3VsYXJfY29tcG9uZW50cy9oZWFkZXIvc2Nzcy9faGVhZGVyLnNjc3MiLCIuLi8uLi92ZW5kb3IvY29tcGFzcy1taXhpbnMvbGliL2NvbXBhc3MvdXRpbGl0aWVzL2dlbmVyYWwvX2NsZWFyZml4LnNjc3MiLCIuLi8uLi92ZW5kb3IvY29tcGFzcy1taXhpbnMvbGliL2NvbXBhc3MvdXRpbGl0aWVzL2dlbmVyYWwvX2hhY2tzLnNjc3MiLCIuLi8uLi9hbmd1bGFyX2xheW91dHMvZGVmYXVsdC9zY3NzL19kZWZhdWx0LnNjc3MiLCIuLi8uLi9hbmd1bGFyX3ZpZXdzL2hvbWUvc2Nzcy9faG9tZS5zY3NzIiwiLi4vLi4vYW5ndWxhcl92aWV3cy9idWRnZXQvc2Nzcy9fYnVkZ2V0LnNjc3MiLCIuLi8uLi9hbmd1bGFyX3ZpZXdzL3Byb2ZpbGUvc2Nzcy9fcHJvZmlsZS5zY3NzIiwiLi4vLi4vYW5ndWxhcl92aWV3cy9lZGl0L3Njc3MvX2VkaXQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBO0VBQ0UsVUFBVTtFQUNWLEtBQUs7RUFDTCxNQUFNO0VBQ04sT0FBTztFQUNQLFNBQVM7RUFDVCxRQUFRO0VBQ1IsWUFBWTs7RUFBZCxRQUFRO0lBRUosVUFBVTtJQUNWLEtBQUs7SUFDTCxNQUFNOztFQUNWLFFBQVE7SUFFSixZQUFZO0lBQ1osT0FBTztJQUNQLGFBQWE7SUFDYixVQUFVO0lBQ1YsYUFBYTtJQUNiLFdBQVc7SUFDWCxhQUFhOztFQUNqQixPQUFPO0lBRUgsWUFBWTs7SUFBaEIsT0FBTyxVQUFVO01BRVgsU0FBUzs7O0FBS2YsaUJBQWlCO0VBRWIsUUFBUTtFQUNSLGVBQWU7RUFDZixVQUFVOztBQUNkLGlCQUFpQjtFQUViLFVBQVU7O0VBQWQsaUJBQWlCLE9BQU87SUFFbEIsU0FBUztJQUNULFFBQVE7SUFDUixpQkFBaUI7SUM3QnJCLFVBQVU7SUNhUixPQUFPO0lGa0JMLGVBQWU7SUFDZixPQUFPO0lBQ1AsZ0JBQWdC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Q1QsY0FBYzs7SUFBcEIsY0FBYyxPQUFPLE1BQU07TUFFbkIsWUFBWTtNQUNaLFdBQVc7TUFDWCxlQUFlO01BQ2YsU0FBUzs7SUFDakIsY0FBYyxPQUFPLE1BQU07TUFFbkIsWUFBWTtNQUNaLFdBQVc7TUFDWCxTQUFTO01BQ1QsT0FBTztNQUNQLGFBQWE7O0lBQ3JCLGNBQWMsT0FBTyxLQUFLO01BRWxCLGNBQWM7OztBQ3RFdEIsZUFBZTtFQUVYLE9BQU87O0FBQ1gsZUFBZTtFQUVYLFFBQVE7O0FBQ1osZUFBZTtFQUVYLGVBQWU7OztBQ1JuQixZQUFZO0VBRVIsZUFBZTtFQUNmLFVBQVU7RUFDVixTQUFTOztBQUNiLFlBQVk7RUFFUixhQUFhO0VBQ2IsY0FBYztFQUNkLFlBQVk7O0FBQ2hCLFlBQVk7RUFFUixVQUFVO0VBQ1YsUUFBUTtFQUNSLE9BQU87O0FBQ1gsWUFBWTtFQUVSLFNBQVM7O0FBQ2IsWUFBWTtFQUVSLFVBQVU7RU5SWixVQUFVO0VDYVIsT0FBTzs7RUtKWCxZQUFZLFFBQVE7SUFFZCxVQUFVO0lBQ1YsT0FBTztJQUNQLEtBQUs7SUFDTCxRQUFRO0lBQ1IsT0FBTztJQUNQLFlBQVk7O0lBQWxCLFlBQVksUUFBUSxjQUFjO01BRTFCLFVBQVU7TUFDVixNQUFNO01BQ04sS0FBSztNQUNMLGFBQWE7O0VBRXJCLFlBQVksUUFBUTtJQUVkLE9BQU87SUFDUCxPQUFPOztJQUFiLFlBQVksUUFBUSxlQUFlO01BRTNCLE9BQU87O0lBQ2YsWUFBWSxRQUFRLGNBQWM7TUFFMUIsZUFBZSIsImZpbGUiOiJob21lLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIHotaW5kZXg6IDU5O1xuICBoZWlnaHQ6IDYwcHg7XG4gIGJhY2tncm91bmQ6ICMyRUNDNzE7XG4gIC5uYXZJY29uIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gIH1cbiAgLnRpdGxlIHtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGxpbmUtaGVpZ2h0OiA2MHB4O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBtYXJnaW4tbGVmdDogNjBweDtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgfVxuICAmLm5vLXRpdGxlIHtcbiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgICAudGl0bGUge1xuICAgICAgZGlzcGxheTogbm9uZTtcbiAgICB9XG4gIH1cbn1cblxuLm1kLXNpZGVuYXYtbGVmdCB7XG4gIC5wcm9maWxlIHtcbiAgICBoZWlnaHQ6IDE1MHB4O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKCMwMDAsIC41KTtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIH1cbiAgLmxpbmtzIHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgYnV0dG9uIHtcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgaGVpZ2h0OiA2MHB4O1xuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgQGluY2x1ZGUgY2xlYXJmaXg7XG4gICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2NjYztcbiAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgdGV4dC10cmFuc2Zvcm06IG5vbmU7XG4gICAgICBmb250LXdlaWdodDogMzAwO1xuICAgICAgcGFkZGluZzogMDtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDA7XG4gICAgICAuaWNvbiB7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiA2MHB4O1xuICAgICAgICBjb2xvcjogIzY2NjtcbiAgICAgICAgd2lkdGg6IDYwcHg7XG4gICAgICAgIGZvbnQtc2l6ZTogMjVweDtcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICBmbG9hdDogbGVmdDtcbiAgICAgIH1cbiAgICAgIC5kZXNjIHtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBjb2xvcjogIzY2NjtcbiAgICAgICAgbGluZS1oZWlnaHQ6IDYwcHg7XG4gICAgICAgIGZsb2F0OiBsZWZ0O1xuICAgICAgfVxuICAgICAgJi5zZWxlY3RlZCB7XG4gICAgICAgIGJhY2tncm91bmQ6ICM0Mjg0RjY7XG4gICAgICAgIC5pY29uLCAuZGVzYyB7XG4gICAgICAgICAgY29sb3I6ICNmZmY7XG4gICAgICAgIH1cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZGFya2VuKCM0Mjg0RjYsIDEwKTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxuICAub3ZlcmxheSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBiYWNrZ3JvdW5kOiAjNUU3N0Q1O1xuICAgIG9wYWNpdHk6IC4zO1xuICB9XG4gIC5waWMge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJvdHRvbTogM3B4O1xuICAgIGxlZnQ6IDNweDtcbiAgICB3aWR0aDogNzBweDtcbiAgICBoZWlnaHQ6IDcwcHg7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB6LWluZGV4OiAxMDtcbiAgfVxuICAubmFtZSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJhY2tncm91bmQ6IHJnYmEoIzAwMCwgLjYpO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogNDBweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDE1cHg7XG4gICAgbGluZS1oZWlnaHQ6IDQwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGJvdHRvbTogMHB4O1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIHotaW5kZXg6IDE7XG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgfVxuICAuYmFja2dyb3VuZCB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICB9XG59IiwiLy8gQGRvYyBvZmZcbi8vIEV4dGVuZHMgdGhlIGJvdHRvbSBvZiB0aGUgZWxlbWVudCB0byBlbmNsb3NlIGFueSBmbG9hdHMgaXQgY29udGFpbnMuXG4vLyBAZG9jIG9uXG5cbkBpbXBvcnQgXCJoYWNrc1wiO1xuXG4vLyBUaGlzIGJhc2ljIG1ldGhvZCBpcyBwcmVmZXJyZWQgZm9yIHRoZSB1c3VhbCBjYXNlLCB3aGVuIHBvc2l0aW9uZWRcbi8vIGNvbnRlbnQgd2lsbCBub3Qgc2hvdyBvdXRzaWRlIHRoZSBib3VuZHMgb2YgdGhlIGNvbnRhaW5lci5cbi8vXG4vLyBSZWNvbW1lbmRhdGlvbnMgaW5jbHVkZSB1c2luZyB0aGlzIGluIGNvbmp1bmN0aW9uIHdpdGggYSB3aWR0aC5cbi8vIENyZWRpdDogW3F1aXJrc21vZGUub3JnXShodHRwOi8vd3d3LnF1aXJrc21vZGUub3JnL2Jsb2cvYXJjaGl2ZXMvMjAwNS8wMy9jbGVhcmluZ19mbG9hdHMuaHRtbClcbkBtaXhpbiBjbGVhcmZpeCB7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIEBpbmNsdWRlIGhhcy1sYXlvdXQ7XG59XG5cbi8vIFRoaXMgb2xkZXIgbWV0aG9kIGZyb20gUG9zaXRpb24gSXMgRXZlcnl0aGluZyBjYWxsZWRcbi8vIFtFYXN5IENsZWFyaW5nXShodHRwOi8vd3d3LnBvc2l0aW9uaXNldmVyeXRoaW5nLm5ldC9lYXN5Y2xlYXJpbmcuaHRtbClcbi8vIGhhcyB0aGUgYWR2YW50YWdlIG9mIGFsbG93aW5nIHBvc2l0aW9uZWQgZWxlbWVudHMgdG8gaGFuZ1xuLy8gb3V0c2lkZSB0aGUgYm91bmRzIG9mIHRoZSBjb250YWluZXIgYXQgdGhlIGV4cGVuc2Ugb2YgbW9yZSB0cmlja3kgQ1NTLlxuQG1peGluIGxlZ2FjeS1waWUtY2xlYXJmaXgge1xuICAmOmFmdGVyIHtcbiAgICBjb250ZW50ICAgIDogXCJcXDAwMjBcIjtcbiAgICBkaXNwbGF5ICAgIDogYmxvY2s7XG4gICAgaGVpZ2h0ICAgICA6IDA7XG4gICAgY2xlYXIgICAgICA6IGJvdGg7XG4gICAgb3ZlcmZsb3cgICA6IGhpZGRlbjtcbiAgICB2aXNpYmlsaXR5IDogaGlkZGVuO1xuICB9XG4gIEBpbmNsdWRlIGhhcy1sYXlvdXQ7XG59XG5cbi8vIFRoaXMgaXMgYW4gdXBkYXRlZCB2ZXJzaW9uIG9mIHRoZSBQSUUgY2xlYXJmaXggbWV0aG9kIHRoYXQgcmVkdWNlcyB0aGUgYW1vdW50IG9mIENTUyBvdXRwdXQuXG4vLyBJZiB5b3UgbmVlZCB0byBzdXBwb3J0IEZpcmVmb3ggYmVmb3JlIDMuNSB5b3UgbmVlZCB0byB1c2UgYGxlZ2FjeS1waWUtY2xlYXJmaXhgIGluc3RlYWQuXG4vL1xuLy8gQWRhcHRlZCBmcm9tOiBbQSBuZXcgbWljcm8gY2xlYXJmaXggaGFja10oaHR0cDovL25pY29sYXNnYWxsYWdoZXIuY29tL21pY3JvLWNsZWFyZml4LWhhY2svKVxuQG1peGluIHBpZS1jbGVhcmZpeCB7XG4gICY6YWZ0ZXIge1xuICAgIGNvbnRlbnQ6IFwiXCI7XG4gICAgZGlzcGxheTogdGFibGU7XG4gICAgY2xlYXI6IGJvdGg7XG4gIH1cbiAgQGluY2x1ZGUgaGFzLWxheW91dDtcbn1cbiIsIkBpbXBvcnQgXCIuLi8uLi9zdXBwb3J0XCI7XG5cbi8vIFRoZSBgem9vbWAgYXBwcm9hY2ggZ2VuZXJhdGVzIGxlc3MgQ1NTIGJ1dCBkb2VzIG5vdCB2YWxpZGF0ZS5cbi8vIFNldCB0aGlzIHRvIGBibG9ja2AgdG8gdXNlIHRoZSBkaXNwbGF5LXByb3BlcnR5IHRvIGhhY2sgdGhlXG4vLyBlbGVtZW50IHRvIGdhaW4gbGF5b3V0LlxuJGRlZmF1bHQtaGFzLWxheW91dC1hcHByb2FjaDogem9vbSAhZGVmYXVsdDtcblxuLy8gVGhpcyBtaXhpbiBjYXVzZXMgYW4gZWxlbWVudCBtYXRjaGluZyB0aGUgc2VsZWN0b3Jcbi8vIHRvIGdhaW4gdGhlIFwiaGFzTGF5b3V0XCIgcHJvcGVydHkgaW4gaW50ZXJuZXQgZXhwbG9yZXIuXG4vLyBNb3JlIGluZm9ybWF0aW9uIG9uIFtoYXNMYXlvdXRdKGh0dHA6Ly9yZWZlcmVuY2Uuc2l0ZXBvaW50LmNvbS9jc3MvaGFzbGF5b3V0KS5cbkBtaXhpbiBoYXMtbGF5b3V0KCRhcHByb2FjaDogJGRlZmF1bHQtaGFzLWxheW91dC1hcHByb2FjaCkge1xuICBAaWYgJGxlZ2FjeS1zdXBwb3J0LWZvci1pZSB7XG4gICAgQGlmICRhcHByb2FjaCA9PSB6b29tIHtcbiAgICAgIEBpbmNsdWRlIGhhcy1sYXlvdXQtem9vbTtcbiAgICB9IEBlbHNlIGlmICRhcHByb2FjaCA9PSBibG9jayB7XG4gICAgICBAaW5jbHVkZSBoYXMtbGF5b3V0LWJsb2NrO1xuICAgIH0gQGVsc2Uge1xuICAgICAgQHdhcm4gXCJVbmtub3duIGhhcy1sYXlvdXQgYXBwcm9hY2g6ICN7JGFwcHJvYWNofVwiO1xuICAgICAgQGluY2x1ZGUgaGFzLWxheW91dC16b29tO1xuICAgIH1cbiAgfVxufVxuXG5AbWl4aW4gaGFzLWxheW91dC16b29tIHtcbiAgQGlmICRsZWdhY3ktc3VwcG9ydC1mb3ItaWU2IG9yICRsZWdhY3ktc3VwcG9ydC1mb3ItaWU3IHtcbiAgICAqem9vbTogMTtcbiAgfVxufVxuXG5AbWl4aW4gaGFzLWxheW91dC1ibG9jayB7XG4gIEBpZiAkbGVnYWN5LXN1cHBvcnQtZm9yLWllIHtcbiAgICAvLyBUaGlzIG1ha2VzIGllNiBnZXQgbGF5b3V0XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIC8vIGFuZCB0aGlzIHB1dHMgaXQgYmFjayB0byBibG9ja1xuICAgICYgeyBkaXNwbGF5OiBibG9jazsgfVxuICB9XG59XG5cbi8vIEEgaGFjayB0byBzdXBwbHkgSUU2IChhbmQgYmVsb3cpIHdpdGggYSBkaWZmZXJlbnQgcHJvcGVydHkgdmFsdWUuXG4vLyBbUmVhZCBtb3JlXShodHRwOi8vd3d3LmNzc3BvcnRhbC5jb20vY3NzLWhhY2tzLyNpbl9jc3MtaW1wb3J0YW50KS5cbkBtaXhpbiBiYW5nLWhhY2soJHByb3BlcnR5LCAkdmFsdWUsICRpZTYtdmFsdWUpIHtcbiAgQGlmICRsZWdhY3ktc3VwcG9ydC1mb3ItaWU2IHtcbiAgICAjeyRwcm9wZXJ0eX06ICN7JHZhbHVlfSAhaW1wb3J0YW50O1xuICAgICN7JHByb3BlcnR5fTogI3skaWU2LXZhbHVlfTtcbiAgfVxufVxuIiwiQGltcG9ydCBcIi4uLy4uL3Nhc3MvY29uZmlnXCI7XG5AaW1wb3J0IFwiLi4vLi4vYW5ndWxhcl9jb21wb25lbnRzL2hlYWRlci9zY3NzL2hlYWRlclwiO1xuXG4ubGF5b3V0cy1kZWZhdWx0IHtcbiAgLmNvbnRlbnQge1xuICAgIG1hcmdpbi10b3A6IDYwcHg7XG4gICAgcGFkZGluZzogMTVweDtcbiAgfSBcbn0iLCIudmlld3NfaG9tZSB7XG4gIC5zcGxhc2gge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgd2lkdGg6IDEwMCU7IFxuICAgIG1pbi1oZWlnaHQ6IDEwMCU7XG4gICAgbGVmdDogMDtcbiAgICBwYWRkaW5nOiAxNXB4O1xuICAgIC5vdmVybGF5IHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHotaW5kZXg6IDE7XG4gICAgICB0b3A6IDA7XG4gICAgICBsZWZ0OiAwO1xuICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgICBkaXNwbGF5OiBub25lO1xuICAgIH1cbiAgICAuYmcge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgdG9wOiAwO1xuICAgICAgbGVmdDogMDtcbiAgICAgIHotaW5kZXg6IDA7XG4gICAgICB3aWR0aDogMTAwJTtcbiAgICAgIGhlaWdodDogMTAwJTtcbiAgICAgIGJhY2tncm91bmQ6IHVybChcIi9wdWJsaWMvaW1hZ2VzL3NwbGFzaC5qcGdcIik7XG4gICAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyIHRvcDtcbiAgICB9XG4gICAgLmxvZ28ge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgZm9udC1mYW1pbHk6ICdBZHZlbnQgUHJvJztcbiAgICAgIHBhZGRpbmctdG9wOiA4MHB4O1xuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICAgIGNvbG9yOiAjMDAwO1xuICAgICAgZm9udC1zaXplOiA2MHB4O1xuICAgIH1cbiAgICAuc3VidGl0bGUge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgZm9udC1zaXplOiAxOHB4O1xuICAgICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgbWFyZ2luLXRvcDogN3B4O1xuICAgIH1cbiAgICAuYWN0aW9uQnV0dG9ucyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDMwcHg7XG4gICAgICBsZWZ0OiAxNXB4O1xuICAgICAgcmlnaHQ6IDE1cHg7XG4gICAgICAubWQtYnV0dG9uIHtcbiAgICAgICAgbWFyZ2luLXRvcDogMTVweDtcbiAgICAgIH1cbiAgICB9XG4gIH1cbn0iLCIudmlld3NfYnVkZ2V0IHtcbiAgbWQtdGFicyB7XG4gICAgbWFyZ2luLWJvdHRvbTogMzBweDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgei1pbmRleDogMTtcbiAgfVxuICAudGFicyB7XG4gICAgbWFyZ2luLWxlZnQ6IC0xNXB4O1xuICAgIG1hcmdpbi1yaWdodDogLTE1cHg7XG4gICAgbWFyZ2luLXRvcDogLTE1cHg7XG4gIH1cbiAgLmQzcGllIHtcbiAgICBtYXJnaW46IGF1dG87XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIG1hcmdpbi10b3A6IC03MHB4O1xuICAgIG1hcmdpbi1ib3R0b206IC00MHB4O1xuICB9XG4gIC5hZGRCdWRnZXQge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDE1cHg7XG4gICAgcmlnaHQ6IDE1cHg7XG4gIH1cbiAgLmRldGFpbHMge1xuICAgIG1hcmdpbjogMTVweDtcbiAgICBtYXJnaW4tYm90dG9tOiA2MHB4O1xuICAgIC5kZXRhaWwge1xuICAgICAgQGluY2x1ZGUgY2xlYXJmaXg7XG4gICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICBwYWRkaW5nOiAxNXB4IDA7XG4gICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2NjYztcbiAgICAgICY6Zmlyc3QtY2hpbGQge1xuICAgICAgICBwYWRkaW5nLXRvcDogMDtcbiAgICAgIH1cbiAgICAgIC5rZXkge1xuICAgICAgICBmbG9hdDogbGVmdDtcbiAgICAgICAgd2lkdGg6IDcwJTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICAgIH1cbiAgICAgIC52YWx1ZSB7XG4gICAgICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgICAgICBmbG9hdDogbGVmdDtcbiAgICAgICAgd2lkdGg6IDMwJTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICAgIH1cbiAgICB9XG4gIH1cbiAgLnN0YXRzIHtcbiAgICBib3JkZXItdG9wOiAxcHggc29saWQgI2NjYztcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2NjYztcbiAgICBib3gtc2hhZG93OiAwIDAgMXB4ICNlZWUgaW5zZXQ7XG4gICAgQGluY2x1ZGUgY2xlYXJmaXg7XG4gICAgLnN0YXQge1xuICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICB3aWR0aDogMzMlO1xuICAgICAgcGFkZGluZzogMTVweCAwO1xuICAgICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2NjYztcbiAgICAgIC5rZXkge1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogM3B4O1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgIH1cbiAgICAgIC52YWx1ZSB7XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAyMHB4O1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgY29sb3I6ICM0Mjg0RjY7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgICB9XG4gICAgICAmLmxhc3Qge1xuICAgICAgICBib3JkZXItcmlnaHQ6IDA7XG4gICAgICB9XG4gICAgfVxuICB9XG59IiwiLnZpZXdzX3Byb2ZpbGUge1xuICBpbnB1dCB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbiAgLnNlbGVjdGVkIHtcbiAgICBib3JkZXI6IDNweCBzb2xpZCAjMGZmO1xuICB9XG4gIC5zZWN0aW9uIHtcbiAgICBtYXJnaW4tYm90dG9tOiAzMHB4O1xuICB9XG59IiwiLnZpZXdzX2VkaXQge1xuICBtZC10YWJzIHtcbiAgICBtYXJnaW4tYm90dG9tOiAxNXB4O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB6LWluZGV4OiAxO1xuICB9XG4gIC50YWJzIHtcbiAgICBtYXJnaW4tbGVmdDogLTE1cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAtMTVweDtcbiAgICBtYXJnaW4tdG9wOiAtMTVweDtcbiAgfVxuICAuYWRkQnVkZ2V0IHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiAxNXB4O1xuICAgIHJpZ2h0OiAxNXB4O1xuICB9XG4gIC50YWItY29udGVudCB7XG4gICAgcGFkZGluZzogMCAxNXB4O1xuICB9XG4gIC5kZXRhaWwge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBAaW5jbHVkZSBjbGVhcmZpeDtcbiAgICAucmVtb3ZlQnVkZ2V0IHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHJpZ2h0OiA3cHg7XG4gICAgICB0b3A6IDUwJTtcbiAgICAgIGhlaWdodDogMzBweDtcbiAgICAgIHdpZHRoOiAzMHB4O1xuICAgICAgbWFyZ2luLXRvcDogLTE1cHg7XG4gICAgICBtZC1pY29uIHtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICBsZWZ0OiAtM3B4O1xuICAgICAgICB0b3A6IC0ycHg7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xuICAgICAgfVxuICAgIH1cbiAgICBtZC1pbnB1dC1ncm91cCB7XG4gICAgICBmbG9hdDogbGVmdDtcbiAgICAgIHdpZHRoOiA1MCU7XG4gICAgICBpbnB1dCB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgfVxuICAgICAgJjpmaXJzdC1jaGlsZCB7XG4gICAgICAgIHBhZGRpbmctcmlnaHQ6IDMwcHg7XG4gICAgICB9XG4gICAgfVxuICB9XG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

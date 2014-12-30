@@ -118,7 +118,7 @@
       var total = 0;
       sanitizeMoney();
       _.forEach(budgetModel.bills, function(billItem) {
-        total=parseFloat(billItem.value);
+        total+=parseFloat(billItem.value);
       });
       total = parseFloat(total).toFixed(2);
       return total;

@@ -24,7 +24,7 @@
     // ========================================
 
     function _init() {
-      components_header_headerService.title = "Budget";
+      components_header_headerService.title = "Monthly Budget";
       components_header_headerService.headerBackground = "#4284F6";
       components_header_headerService.selectedLink = "budget";
     }

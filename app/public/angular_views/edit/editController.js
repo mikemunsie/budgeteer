@@ -25,7 +25,7 @@
     // ========================================
 
     function _init() {
-      components_header_headerService.title = "Edit Budget";
+      components_header_headerService.title = "Edit Monthly Budget";
       components_header_headerService.headerBackground = "#4CCF4C";
       components_header_headerService.showBackButton = true;
     }
