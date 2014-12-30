@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "browser-sync": "*",
     "consolidate": "*",
     "express": "*",
     "ejs": "*",
@@ -43,8 +44,6 @@
     "walk": "*"
   },
   "devDependencies": {
-    "bower": "*",
-    "browser-sync": "*",
     "karma": "*",
     "karma-chrome-launcher": "*",
     "karma-jasmine": "*",
