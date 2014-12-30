@@ -76,8 +76,8 @@
               color: "#F6872D"
             },
             {
-              label: "Salary",
-              value: parseInt(getTotalSalary(), 0),
+              label: "Savings",
+              value: parseInt(getTotalSavings(), 0),
               color: "#4CCF4C"
             }
           ]

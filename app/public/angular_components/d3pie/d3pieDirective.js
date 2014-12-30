@@ -34,22 +34,31 @@
     var pie = new d3pie(element[0], {
       labels: {
         outer: {
-          format: "none"
+          format: "percentage",
+          hideWhenLessThanPercentage: null,
+          pieDistance: 10,
+          color: "#000"
         },
         inner: {
           format: "label",
-          hideWhenLessThanPercentage: null
+          hideWhenLessThanPercentage: false
         },
         mainLabel: {
           color: "#fff",
           font: "roboto",
           fontSize: 13
         },
+        percentage: {
+          color: "#000",
+          font: "arial",
+          fontSize: 10,
+          decimalPlaces: 0
+        },
       },
       size: {
         canvasHeight: element.width(),
         canvasWidth: element.width(),
-        pieInnerRadius: 0,
+        pieInnerRadius: 50,
         pieOuterRadius: null
       },
       data: data
