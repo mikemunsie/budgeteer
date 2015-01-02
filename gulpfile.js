@@ -84,12 +84,6 @@ gulp.task('prod', function() {
     .then(createContentCSS)
     .then(createAppCSS)
     .then(function() {
-      shell.task([
-        "forever stop budgeteer.com",
-        "PORT=9002 forever --uid budgeteer start app/bin/www"
-      ], {
-        ignoreErrors: true
-      })();
       deferred.resolve();
     });
   return deferred.promise;
