@@ -1,3 +1,3 @@
 #Budgeteer
 
-Mobile website testing out Google's material design with Angular.
+Small mobile site for managing budgets. Testing out Google's material design with Angular.

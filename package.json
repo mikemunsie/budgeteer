@@ -2,6 +2,10 @@
   "name": "budgeteer",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "dev": "gulp dev",
+    "prod": "gulp"
+  },
   "dependencies": {
     "browser-sync": "*",
     "consolidate": "*",
