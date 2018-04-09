@@ -76,7 +76,7 @@ var packages = {
 // Tasks
 // ====================================
 
-gulp.task('prod', function() {
+gulp.task('build', function() {
   var deferred = Q.defer();
   cleanAppJS()
     .then(cleanCSS)

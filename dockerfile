@@ -1,5 +1,7 @@
 FROM node:alpine
 
+RUN apk add --update git && \
+  rm -rf /tmp/* /var/cache/apk/*
 ENV PORT=9001
 
 RUN apk add --no-cache --virtual .gyp \
