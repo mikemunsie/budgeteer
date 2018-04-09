@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ENV PORT=9001
+ENV PORT=80
 
 RUN apk add --update git && \
   rm -rf /tmp/* /var/cache/apk/*
