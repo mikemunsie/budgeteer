@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ENV PORT=8000
+ENV PORT=9001
 
 RUN apk add --no-cache --virtual .gyp \
         python \
@@ -17,5 +17,5 @@ ADD . /usr/app
 WORKDIR '/usr/app'
 RUN npm run build
 
-EXPOSE 8000
+EXPOSE 9001
 CMD [ "npm", "start" ]
