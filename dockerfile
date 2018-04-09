@@ -1,13 +1,9 @@
 FROM node:alpine
 
-RUN apk add --update git && \
-  rm -rf /tmp/* /var/cache/apk/*
 ENV PORT=9001
 
-RUN apk add --no-cache --virtual .gyp \
-        python \
-        make \
-        g++
+RUN apk add --update git && \
+  rm -rf /tmp/* /var/cache/apk/*
 
 ADD package.json /tmp/package.json
 ADD yarn.lock /tmp/yarn.lock
@@ -20,4 +16,5 @@ WORKDIR '/usr/app'
 RUN npm run build
 
 EXPOSE 9001
+
 CMD [ "npm", "start" ]
