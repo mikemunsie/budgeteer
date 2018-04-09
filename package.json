@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp",
-    "deploy": "bash ../../deploy/budgeteer.sh",
+    "deploy": "bash ../../deploy/budgeteer/deploy.sh",
     "start": "node app/bin/www"
   },
   "dependencies": {
