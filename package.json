@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "gulp dev",
-    "prod": "gulp"
+    "build": "gulp",,
+    "deploy": "bash ../../deploy/budgeteer.sh",
+    "start": "node app/bin/www"
   },
   "dependencies": {
     "browser-sync": "*",
